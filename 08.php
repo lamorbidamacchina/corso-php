@@ -21,7 +21,7 @@
   // invocazione (chiamata) della funzione
   $prezzoIntero = 100.0;
   $sconto = 10.0;
-  $ris = calcolaPrezzo($prezzoIntero,$sconto);
+  $ris = calcolaPrezzo(129,54);
   ?>
 
   <p>
@@ -107,11 +107,14 @@
     global $cognome;
     $nome = "Clint"; #var locale 
     $nomeCompleto = "$nome $cognome";
-    print $nomeCompleto;
+    //print $nomeCompleto;
+    return $nomeCompleto;
   }
+
   echo "Il valore della variabile nome è: ".$nome. "<br>";
   echo "Il valore della variabile cognome è: ".$cognome. "<br>";
-  completaNome();
+  $risultato = completaNome();
+  echo $risultato;
   ?>
 </body>
 </html>
